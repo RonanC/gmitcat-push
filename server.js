@@ -159,7 +159,7 @@ app.post('/addUser', function (req, res) {
     newUser.deviceToken = req.query.deviceToken;
     newUser.deviceType = req.query.deviceType;
     newUser.timeStamp = req.query.timeStamp;//new Date().toISOString().slice(0, 16);
-    newUser.isoStamp = req.query.isoStamp;
+    newUser.timeStampIso = new Date().toISOString().slice(0, 16);
     //req.body.timeStamp;
 
     console.log("new user: " + JSON.stringify(newUser));
