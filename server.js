@@ -151,7 +151,7 @@ app.post('/addUser', function (req, res) {
     // add new user
     console.log("\n/adduser GET route");
     
-    // console.log("req.query: " + JSON.stringify(req.query));
+    console.log("req.query: " + JSON.stringify(req.query));
     
     var newUser = {};
     newUser._id = req.query._id;
